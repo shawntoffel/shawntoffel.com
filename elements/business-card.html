@@ -1,0 +1,45 @@
+<link rel="import" 
+href="../bower_components/polymer/polymer.html">
+<link rel="import"  
+href="logo-bar.html">
+
+<polymer-element name="business-card">
+<template>
+<style>
+    :host {
+        display: block;
+        position: relative;
+        font-size: 1.2rem;
+        top:30%;
+        font-weight: 300;
+        transform: translateY(-30%);
+    }
+
+    polyfill-next-selector { content: '.card-header .name';  }
+    .card-header ::content .name {
+        margin: 0;
+        font-size: 30rem;
+        font-weight: 500;
+        color: #0288D1;
+    }
+
+    .subname {
+        color: #0288D1;
+    }
+
+</style>
+
+<div class="card-header" layout vertical center>
+    <content select=".name"></content>
+</div>
+
+<div class="logos" layout vertical center>
+    <logo-bar></logo-bar>
+</div>
+
+</template>
+
+<script>
+    Polymer({});
+</script>
+</polymer-element>

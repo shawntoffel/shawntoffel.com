@@ -1,0 +1,32 @@
+<link rel="import" 
+href="../bower_components/polymer/polymer.html">
+<link rel="import"
+href="../bower_components/core-image/core-image.html">
+
+<polymer-element name="logo-bar">
+<template>
+<style>
+    :host {
+        display: block;
+        position: relative
+        background-color: white;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .logo {
+        width:80px;
+        height:80px;
+        margin:20px;
+    }
+</style>
+
+<a href="https://github.com/shawntoffel" target="_blank"><core-image class="logo" src="/images/Octocat.png" preload fade sizing="contain"></core-image></a>
+<a href="https://www.linkedin.com/in/shawntoffel" target="_blank"><core-image class="logo" src="/images/in.png" preload fade sizing="contain"></core-image></a>
+
+</template>
+
+
+<script>
+    Polymer({});
+</script>
+</polymer-element>
